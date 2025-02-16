@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.6",
+    "tailwindcss": "^4.0.6"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.1",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  },
+  "tailwindStylesheet": {
+    "tailwindStylesheet": "./assets/styles/style.css"
+  }
+}
