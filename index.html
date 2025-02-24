@@ -1,245 +1,497 @@
 <!doctype html>
 <html lang="en" class="overflow-x-hidden">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ecommerce from Figma</title>
-  <link rel="shortcut icon" href="./assets/images/category/Category-Computer.png" type="image/x-icon" />
-  <script src="https://kit.fontawesome.com/ea53ad56d9.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./assets/styles/style.css" />
-</head>
-
-<body class="bg-white overflow-x-hidden">
-  <div class="bg-black text-center p-0.5 md:p-1 text-sm/6">
-    <span class="text-gray-300">Summer Sale For All Swim Suits And Free Express Delivery - OFF
-      50%!</span>
-    <a href="#" class="ml-2 text-white underline underline-offset-2 cursor-pointer">Shop Now</a>
-  </div>
-  <header class="sticky inset-x-0 top-0 z-50 bg-white transition duration-300">
-    <nav class="flex items-between justify-between lg:justify-center p-2 md:px-10" aria-label="Global">
-      <div class="flex items-center lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
-          <h1 class="font-semibold text-md text-dark tracking-[1px]">
-            Exclusive
-          </h1>
-        </a>
-      </div>
-      <div class="flex lg:hidden">
-        <button type="button" id="menuButton"
-          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:text-gray-800 focus:text-gray-950 cursor-pointer">
-          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            aria-hidden="true" data-slot="icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-        </button>
-      </div>
-      <div class="hidden lg:flex items-center lg:gap-x-8">
-        <a href="#"
-          class="text-sm/6 font-semibold text-gray-900 transition duration-300 hover:text-blue-500 hover:underline">Home</a>
-        <a href="#"
-          class="text-sm/6 font-semibold text-gray-900 transition duration-300 hover:text-blue-500 hover:underline">Contact</a>
-        <a href="#"
-          class="text-sm/6 font-semibold text-gray-900 transition duration-300 hover:text-blue-500 hover:underline">About</a>
-      </div>
-      <div class="hidden lg:flex gap-2 items-center lg:flex-1 lg:justify-end">
-        <form action="" class="border-1 border-gray-300 rounded hover:border-blue-300">
-          <input type="search" name="search" id="search" placeholder="Search for products"
-            class="w-40 border-0 focus:outline-0 p-1 text-sm/6" />
-          <button type="search"
-            class="border-l-1 p-1 border-gray-300 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
-        <a href="#" class="p-1 border-1 rounded-full text-gray-400 transition duration-300 hover:bg-blue-300">
-          <i class="fa-solid fa-heart p-1"></i></a>
-        <a href="#" class="p-1 border-1 rounded-full text-gray-400 transition duration-300 hover:text-blue-300">
-          <i class="fa-solid fa-user p-1"> </i></a>
-      </div>
-    </nav>
-  </header>
-  <div class="" role="dialog" aria-modal="true" id="mobileMenu">
-    <div class="fixed inset-0 z-50"></div>
-    <div
-      class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-      <div class="sticky top-0 z-50 bg-white">
-        <div class="flex items-center justify-between py-2">
+  <head>
+    <!-- Meta tags and document setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce from Figma</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Category-Computer.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/ea53ad56d9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body class="bg-white overflow-x-hidden">
+    <!-- Top promotional banner -->
+    <div class="bg-black text-center p-0.5 md:p-1 text-sm/6">
+      <span class="text-gray-300"
+        >Summer Sale For All Swim Suits And Free Express Delivery - OFF
+        50%!</span
+      >
+      <a
+        href="#"
+        class="ml-2 text-white underline underline-offset-2 cursor-pointer"
+        >Shop Now</a
+      >
+    </div>
+    <!-- Main navigation header -->
+    <header
+      class="sticky inset-x-0 top-0 z-50 bg-white transition duration-300"
+    >
+      <nav
+        class="container mx-auto flex items-between justify-between lg:justify-center p-2 md:px-10"
+        aria-label="Global"
+      >
+        <div class="flex items-center lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
-            <h1 class="font-semibold text-md text-dark">Exclusive</h1>
+            <h1 class="font-semibold text-md text-dark tracking-[1px]">
+              Exclusive
+            </h1>
           </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 cursor-pointer" id="closeButton">
-            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true" data-slot="icon">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </div>
+        <div class="flex lg:hidden">
+          <button
+            type="button"
+            id="menuButton"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:text-gray-800 focus:text-gray-950 cursor-pointer"
+          >
+            <svg
+              class="size-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+              data-slot="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
             </svg>
           </button>
         </div>
-      </div>
-      <div class="my-0.5">
-        <div class="flex items-center justify-end gap-2 py-2 mt-4 mb-3">
-          <form action="" class="border-1 border-gray-300 rounded hover:border-blue-300">
-            <input type="search" name="search" id="search" placeholder="Search for products"
-              class="w-40 border-0 focus:outline-0 p-1 text-sm/6" />
-            <button type="search"
-              class="border-l-1 p-1.5 border-gray-300 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white">
+        <div class="hidden lg:flex items-center lg:gap-x-8">
+          <a
+            href="#"
+            class="text-sm/6 font-semibold text-gray-900 transition duration-300 hover:text-blue-500 hover:underline"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-sm/6 font-semibold text-gray-900 transition duration-300 hover:text-blue-500 hover:underline"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="text-sm/6 font-semibold text-gray-900 transition duration-300 hover:text-blue-500 hover:underline"
+            >About</a
+          >
+        </div>
+        <div class="hidden lg:flex gap-2 items-center lg:flex-1 lg:justify-end">
+          <form
+            action=""
+            class="border-1 border-gray-300 rounded hover:border-blue-300"
+          >
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search for products"
+              class="w-40 border-0 focus:outline-0 p-1 text-sm/6"
+            />
+            <button
+              type="search"
+              class="border-l-1 p-1 border-gray-300 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white"
+            >
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
-          <a href="#"
-            class="p-1 border-1 rounded-full border-gray-300 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white">
-            <i class="fa-regular fa-heart p-1.5"></i></a>
-          <a href="#"
-            class="p-1 border-1 rounded-full border-gray-300 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white">
-            <i class="fa-regular fa-user p-1.5"></i></a>
+          <a
+            href="#"
+            class="p-1 border-1 rounded-full text-gray-400 transition duration-300 hover:bg-blue-300"
+          >
+            <i class="fa-solid fa-heart p-1"></i
+          ></a>
+          <a
+            href="#"
+            class="p-1 border-1 rounded-full text-gray-400 transition duration-300 hover:text-blue-300"
+          >
+            <i class="fa-solid fa-user p-1"></i
+          ></a>
         </div>
-      </div>
-      <div class="my-4 p-1">
-        <div class="grid grid-cols-2 gap-x-5">
-          <div class="group relative text-sm text-center">
-            <img src="./assets/images/category/idepad.png" alt="Latest smartphone models."
-              class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75" />
-            <a href="#" class="mt-1 block font-medium text-gray-900">
-              <span class="absolute inset-0 z-10" aria-hidden="true"></span>
-              New Arrivals
+      </nav>
+    </header>
+    <!-- Mobile menu (hidden by default) -->
+    <div class="hidden" role="dialog" aria-modal="true" id="mobileMenu">
+      <!-- Mobile menu overlay -->
+      <div class="fixed inset-0 z-50"></div>
+      <!-- Mobile menu content container -->
+      <div
+        class="fixed inset-y-0 right-0 z-50 w-full bg-white px-6 py-4 pt-0 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 transition duration-300 overflow-y-scroll no-scrollbar"
+      >
+        <!-- Mobile menu header with logo and close button -->
+        <div class="sticky top-0 z-50 bg-white">
+          <div
+            class="flex items-center justify-between border-b-1 border-b-gray-200"
+          >
+            <a href="#" class="p-1.5">
+              <h1 class="font-semibold text-md text-dark">Exclusive</h1>
             </a>
-            <p aria-hidden="true" class="mt-1 underline">Shop now</p>
-          </div>
-          <div class="group relative text-sm text-center">
-            <img src="./assets/images/category/monitor.png" alt="Flagship smartphones from top brands."
-              class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75" />
-            <a href="#" class="mt-1 block font-medium text-gray-900">
-              <span class="absolute inset-0 z-10" aria-hidden="true"></span>
-              Flagship Models
-            </a>
-            <p aria-hidden="true" class="mt-1 underline">Shop now</p>
+            <button
+              type="button"
+              class="rounded-md p-2.5 text-gray-700 cursor-pointer"
+              id="closeButton"
+            >
+              <svg
+                class="size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="">
-        <li class="list-none">
-          <details class="group">
-            <summary
-              class="flex justify-between items-center bg-teal-50 rounded-lg px-4 py-1.5 text-sm/6 font-semibold text-gray-700 cursor-pointer">
-              <span>Smartphones</span>
-              <span class="transition-transform group-open:rotate-90">&#11208;</span>
-            </summary>
-            <ul class="">
-              <li class="mb-0.5">
-                <a href="#"
-                  class="block pl-20 py-1 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300">
-                  Android Phones
-                </a>
-              </li>
-              <li class="mb-0.5">
-                <a href="#"
-                  class="block pl-20 py-1 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300">
-                  iPhones
-                </a>
-              </li>
-              <li class="mb-0.5">
-                <a href="#"
-                  class="block pl-20 py-1 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300">
-                  Budget Phones
-                </a>
-              </li>
-            </ul>
-          </details>
-        </li>
-        <li class="list-none">
-          <details class="group">
-            <summary
-              class="flex justify-between items-center bg-teal-50 rounded rounded-lg px-4 py-1.5 text-sm/6 font-semibold text-gray-700 cursor-pointer">
-              <span>Laptops</span>
-              <span class="transition-transform group-open:rotate-90">&#11208;</span>
-            </summary>
-            <ul class="">
-              <li class="mb-0.5">
-                <a href="#"
-                  class="block pl-20 py-1 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300">
-                  Ultrabooks
-                </a>
-              </li>
-              <li class="mb-0.5">
-                <a href="#"
-                  class="block pl-20 py-1 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300">
-                  Gaming Laptops
-                </a>
-              </li>
-              <li class="mb-0.5">
-                <a href="#"
-                  class="block pl-20 py-1 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300">
-                  Business Laptops
-                </a>
-              </li>
-            </ul>
-          </details>
-        </li>
-        <li class="list-none">
-          <details class="group">
-            <summary
-              class="flex justify-between items-center bg-teal-50 rounded rounded-lg px-4 py-1.5 text-sm/6 font-semibold text-gray-700 cursor-pointer">
-              <span>Smartwatches</span>
-              <span class="transition-transform group-open:rotate-90">&#11208;</span>
-            </summary>
-            <ul class="">
-              <li class="mb-0.5">
-                <a href="#"
-                  class="block pl-20 py-1 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300">
-                  Fitness Trackers
-                </a>
-              </li>
-              <li class="mb-0.5">
-                <a class="block pl-20 py-1 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
-                  href="#">
-                  Luxury Smartwatches
-                </a>
-              </li>
-            </ul>
-          </details>
-        </li>
-        <li class="list-none">
-          <details class="group">
-            <summary
-              class="flex justify-between items-center bg-teal-50 rounded-lg px-4 py-1.5 text-sm/6 font-semibold text-gray-700 cursor-pointer">
-              <span>Accessories</span>
-              <span class="transition-transform group-open:rotate-90">&#11208;</span>
-            </summary>
-            <ul class="">
-              <li class="mb-0.5">
-                <a href="#"
-                  class="block pl-20 py-1 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300">
-                  Phone Cases
-                </a>
-              </li>
-              <li class="mb-0.5">
-                <a href="#"
-                  class="block pl-20 py-1 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300">
-                  Chargers & Cables
-                </a>
-              </li>
-            </ul>
-          </details>
-        </li>
-      </div>
-
-      <div class="flex flex-row justify-around items-center">
-        <a href="#"
-          class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-medium text-gray-900 hover:bg-gray-100">Home</a>
-        <a href="#"
-          class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-medium text-gray-900 hover:bg-gray-100">Contact</a>
-        <a href="#"
-          class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-medium text-gray-900 hover:bg-gray-100">About</a>
+        <!-- Mobile search and user actions -->
+        <div class="my-0.5">
+          <div class="flex items-center justify-end gap-2 py-2 mt-4 mb-3">
+            <form
+              action=""
+              class="border-1 border-gray-300 rounded hover:border-blue-300"
+            >
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search for products"
+                class="w-40 border-0 focus:outline-0 p-1 text-sm/6"
+              />
+              <button
+                type="search"
+                class="border-l-1 p-1.5 border-gray-300 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <a
+              href="#"
+              class="p-1 border-1 rounded-full border-gray-300 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white"
+            >
+              <i class="fa-regular fa-heart p-1.5"></i
+            ></a>
+            <a
+              href="#"
+              class="p-1 border-1 rounded-full border-gray-300 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white"
+            >
+              <i class="fa-regular fa-user p-1.5"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Featured categories grid -->
+        <div class="my-4 p-1">
+          <div class="grid grid-cols-2 gap-x-5">
+            <div class="group relative text-sm text-center">
+              <img
+                src="./assets/images/idepad.png"
+                alt="Latest smartphone models."
+                class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75"
+              />
+              <a href="#" class="mt-1 block font-medium text-gray-900">
+                <span class="absolute inset-0 z-10" aria-hidden="true"></span>
+                New Arrivals
+              </a>
+              <p aria-hidden="true" class="mt-1 underline">Shop now</p>
+            </div>
+            <div class="group relative text-sm text-center">
+              <img
+                src="./assets/images/monitor.png"
+                alt="Flagship smartphones from top brands."
+                class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75"
+              />
+              <a href="#" class="mt-1 block font-medium text-gray-900">
+                <span class="absolute inset-0 z-10" aria-hidden="true"></span>
+                Flagship Models
+              </a>
+              <p aria-hidden="true" class="mt-1 underline">Shop now</p>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile navigation categories accordion -->
+        <div class="categories">
+          <li class="list-none">
+            <details class="group">
+              <summary
+                class="flex justify-between items-center bg-teal-100 mb-0.5 rounded-xs px-4 py-1.5 text-sm/6 font-semibold text-gray-700 cursor-pointer"
+              >
+                <span>Smartphones</span>
+                <span class="transition-transform group-open:rotate-90"
+                  >&#11208;</span
+                >
+              </summary>
+              <ul class="">
+                <li class="mb-0.5">
+                  <a
+                    href="#"
+                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
+                  >
+                    Android Phones
+                  </a>
+                </li>
+                <li class="mb-0.5">
+                  <a
+                    href="#"
+                    class="block pl-10 py-1 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
+                  >
+                    iPhones
+                  </a>
+                </li>
+                <li class="mb-0.5">
+                  <a
+                    href="#"
+                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
+                  >
+                    Budget Phones
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="list-none">
+            <details class="group">
+              <summary
+                class="flex justify-between items-center bg-teal-100 mb-0.5 rounded-xs px-4 py-1.5 text-sm/6 font-semibold text-gray-700 cursor-pointer"
+              >
+                <span>Laptops</span>
+                <span class="transition-transform group-open:rotate-90"
+                  >&#11208;</span
+                >
+              </summary>
+              <ul class="">
+                <li class="mb-0.5">
+                  <a
+                    href="#"
+                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
+                  >
+                    Ultrabooks
+                  </a>
+                </li>
+                <li class="mb-0.5">
+                  <a
+                    href="#"
+                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
+                  >
+                    Gaming Laptops
+                  </a>
+                </li>
+                <li class="mb-0.5">
+                  <a
+                    href="#"
+                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
+                  >
+                    Business Laptops
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="list-none">
+            <details class="group">
+              <summary
+                class="flex justify-between items-center bg-teal-100 mb-0.5 rounded-xs px-4 py-1.5 text-sm/6 font-semibold text-gray-700 cursor-pointer"
+              >
+                <span>Smartwatches</span>
+                <span class="transition-transform group-open:rotate-90"
+                  >&#11208;</span
+                >
+              </summary>
+              <ul class="">
+                <li class="mb-0.5">
+                  <a
+                    href="#"
+                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
+                  >
+                    Fitness Trackers
+                  </a>
+                </li>
+                <li class="mb-0.5">
+                  <a
+                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
+                    href="#"
+                  >
+                    Luxury Smartwatches
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="list-none">
+            <details class="group">
+              <summary
+                class="flex justify-between items-center bg-teal-100 mb-0.5 rounded-xs px-4 py-1.5 text-sm/6 font-semibold text-gray-700 cursor-pointer"
+              >
+                <span>Accessories</span>
+                <span class="transition-transform group-open:rotate-90"
+                  >&#11208;</span
+                >
+              </summary>
+              <ul class="">
+                <li class="mb-0.5">
+                  <a
+                    href="#"
+                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
+                  >
+                    Phone Cases
+                  </a>
+                </li>
+                <li class="mb-0.5">
+                  <a
+                    href="#"
+                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
+                  >
+                    Chargers & Cables
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </div>
+        <!-- Mobile navigation links -->
+        <div
+          class="flex flex-col justify-around items-left bg-black my-2 p-1 rounded-md"
+        >
+          <a
+            href="#"
+            class="block rounded-lg px-3 text-center py-1 mb-0.5 text-base/7 text-gray-100 font-medium hover:bg-gray-100 hover:text-gray-900"
+            transition
+            duration-300
+            >Home</a
+          >
+          <a
+            href="#"
+            class="block rounded-lg px-3 text-center py-1 mb-0.5 text-base/7 text-gray-100 font-medium hover:bg-gray-100 hover:text-gray-900 transition duration-300"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="block rounded-lg px-3 text-center py-1 mb-0.5 text-base/7 text-gray-100 font-medium hover:bg-gray-100 hover:text-gray-900 transition duration-300"
+            >About</a
+          >
+        </div>
       </div>
     </div>
-  </div>
-  <main class="p-6">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, voluptatem
-    error velit minima doloremque possimus ea dolorum corrupti, eligendi quas
-    molestias distinctio pariatur doloribus aperiam officiis illo ducimus a
-    alias!
-  </main>
-  <script src="//unpkg.com/alpinejs" defer></script>
-  <script src="./assets/scripts/script.js" defer></script>
-</body>
-
+    <!-- Main content area -->
+    <main class="p-6">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, voluptatem
+      error velit minima doloremque possimus ea dolorum corrupti, eligendi quas
+      molestias distinctio pariatur doloribus aperiam officiis illo ducimus a
+      alias!
+    </main>
+    <!-- Footer section -->
+    <footer class="w-full bg-black">
+      <div class="container mx-auto py-10">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-between items-start gap-6 text-gray-100 px-5"
+        >
+          <div class="flex flex-col justify-center items-left gap-2">
+            <h4 class="text-[22px] font-semibold mb-2">Exclusive</h4>
+            <h5 class="text-[18px] font-medium">Subscribe</h5>
+            <p class="text-md">
+              <label for="mail">Get 10% off your first order</label>
+            </p>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="Enter your email"
+              class="border-1 border-gray-400 rounded-md px-2 py-1.5 w-auto max-w-80"
+            />
+          </div>
+          <div class="flex flex-col justify-center items-left gap-2">
+            <h5 class="text-[20px] font-medium mb-1.5">Support</h5>
+            <address class="text-gray-400">111 Bijoy Soroni, Dhaka</address>
+            <p class="text-gray-400">exclusive@gmail.com</p>
+            <p class="text-gray-400">+880-86948-86</p>
+          </div>
+          <div class="flex flex-col justify-center items-left gap-2">
+            <h5 class="text-[20px] font-medium mb-1.5">Account</h5>
+            <a
+              href="#"
+              class="text-base/6 text-gray-400 font-medium hover:text-white"
+              transition
+              duration-300
+              >My Account</a
+            >
+            <a
+              href="#"
+              class="text-base/6 text-gray-400 font-medium hover:text-white transition duration-300"
+              >Login / Register</a
+            >
+            <a
+              href="#"
+              class="text-base/6 text-gray-400 font-medium hover:text-white transition duration-300"
+              >Cart</a
+            >
+            <a
+              href="#"
+              class="text-base/6 text-gray-400 font-medium hover:text-white transition duration-300"
+              >Wishlist</a
+            >
+            <a
+              href="#"
+              class="text-base/6 text-gray-400 font-medium hover:text-white transition duration-300"
+              >Shop</a
+            >
+          </div>
+          <div class="flex flex-col justify-center items-left gap-2">
+            <h5 class="text-[20px] font-medium mb-1.5">Quick Link</h5>
+            <a
+              href="#"
+              class="text-base/6 text-gray-400 font-medium hover:text-white transition duration-300"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-base/6 text-gray-400 font-medium hover:text-white transition duration-300"
+              >Terms Of Use</a
+            >
+            <a
+              href="#"
+              class="text-base/6 text-gray-400 font-medium hover:text-white transition duration-300"
+              >FAQ</a
+            >
+            <a
+              href="#"
+              class="text-base/6 text-gray-400 font-medium hover:text-white transition duration-300"
+              >Contact</a
+            >
+          </div>
+          <div class="flex flex-col justify-center items-left gap-2">
+            <h5 class="text-[20px] font-medium mb-1.5">Download App</h5>
+            <p class="text-gray-500 text-sm">Save $3 With App(New User Only)</p>
+            <div class="flex justify-start gap-2 items-center">
+              <a href="#"
+                ><img src="./assets/images/qrcode.png" alt="qr-code" class=""
+              /></a>
+              <div class="flex flex-col gap-1">
+                <a href="#"
+                  ><img src="./assets/images/download-appstore.png" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="./assets/images/download-google-play.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript dependencies -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="./assets/scripts/script.js" defer></script>
+  </body>
 </html>
