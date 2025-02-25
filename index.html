@@ -34,12 +34,12 @@
       class="sticky inset-x-0 top-0 z-50 bg-white transition duration-300"
     >
       <nav
-        class="container mx-auto flex items-between justify-between lg:justify-center p-2 md:px-10"
+        class="container mx-auto flex items-center justify-between lg:justify-center py-2"
         aria-label="Global"
       >
         <div class="flex items-center lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
-            <h1 class="font-semibold text-md text-dark tracking-[1px]">
+            <h1 class="font-semibold text-lg text-dark tracking-[1px]">
               Exclusive
             </h1>
           </a>
@@ -87,7 +87,7 @@
         <div class="hidden lg:flex gap-2 items-center lg:flex-1 lg:justify-end">
           <form
             action=""
-            class="border-1 border-gray-300 rounded hover:border-blue-300"
+            class="border-1 border-gray-400 rounded hover:border-blue-400"
           >
             <input
               type="search"
@@ -98,22 +98,22 @@
             />
             <button
               type="search"
-              class="border-l-1 p-1 border-gray-300 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white"
+              class="border-l-1 p-1 border-gray-400 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white cursor-pointer"
             >
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
           <a
             href="#"
-            class="p-1 border-1 rounded-full text-gray-400 transition duration-300 hover:bg-blue-300"
+            class="text-black transition duration-300 hover:text-blue-400"
           >
-            <i class="fa-solid fa-heart p-1"></i
+            <i class="fa-solid fa-heart p-0.5 fa-lg"></i
           ></a>
           <a
             href="#"
-            class="p-1 border-1 rounded-full text-gray-400 transition duration-300 hover:text-blue-300"
+            class="text-black transition duration-300 hover:text-blue-400"
           >
-            <i class="fa-solid fa-user p-1"></i
+            <i class="fa-solid fa-user p-0.5 fa-lg"></i
           ></a>
         </div>
       </nav>
@@ -162,31 +162,31 @@
           <div class="flex items-center justify-end gap-2 py-2 mt-4 mb-3">
             <form
               action=""
-              class="border-1 border-gray-300 rounded hover:border-blue-300"
+              class="border-1 border-gray-400 rounded hover:border-blue-400"
             >
               <input
                 type="search"
                 name="search"
                 id="search"
-                placeholder="Search for products"
+                placeholder="Search products"
                 class="w-40 border-0 focus:outline-0 p-1 text-sm/6"
               />
               <button
                 type="search"
-                class="border-l-1 p-1.5 border-gray-300 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white"
+                class="border-l-1 p-1.5 border-gray-400 text-black transition duration-300 hover:bg-blue-300 hover:text-white"
               >
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </form>
             <a
               href="#"
-              class="p-1 border-1 rounded-full border-gray-300 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white"
+              class="p-1 border-1 rounded-full border-gray-400 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white"
             >
               <i class="fa-regular fa-heart p-1.5"></i
             ></a>
             <a
               href="#"
-              class="p-1 border-1 rounded-full border-gray-300 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white"
+              class="p-1 border-1 rounded-full border-gray-400 text-gray-400 transition duration-300 hover:bg-blue-300 hover:text-white"
             >
               <i class="fa-regular fa-user p-1.5"></i
             ></a>
@@ -395,7 +395,7 @@
     <footer class="w-full bg-black">
       <div class="container mx-auto py-10">
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-between items-start gap-6 text-gray-100 px-5"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-between items-start gap-6 text-gray-100"
         >
           <div class="flex flex-col justify-center items-left gap-2">
             <h4 class="text-[22px] font-semibold mb-2">Exclusive</h4>
@@ -421,9 +421,7 @@
             <h5 class="text-[20px] font-medium mb-1.5">Account</h5>
             <a
               href="#"
-              class="text-base/6 text-gray-400 font-medium hover:text-white"
-              transition
-              duration-300
+              class="text-base/6 text-gray-400 font-medium hover:text-white transition duration-300"
               >My Account</a
             >
             <a
