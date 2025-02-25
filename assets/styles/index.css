@@ -1,14 +1,13 @@
-/* Import Tailwind CSS framework */
-@import "tailwindcss";
-/* Custom utility classes */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
 @layer utilities {
-  /* Remove scrollbar from Chrome, Safari and Opera while keeping functionality */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
-  /* Remove scrollbar from IE, Edge and Firefox while keeping functionality */
   .no-scrollbar {
-    -ms-overflow-style: none; /* Internet Explorer and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
