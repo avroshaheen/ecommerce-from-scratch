@@ -7,7 +7,7 @@
     <title>Ecommerce from Figma</title>
     <link
       rel="shortcut icon"
-      href="./assets/images/Category-Computer.png"
+      href="./assets/images/favicon.ico"
       type="image/x-icon"
     />
     <script
@@ -16,7 +16,7 @@
     ></script>
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
-  <body class="bg-white overflow-x-hidden">
+  <body class="bg-white no-scrollbar">
     <!-- Top promotional banner -->
     <div class="bg-black text-center p-0.5 md:p-1 text-sm/6">
       <span class="text-gray-300"
@@ -31,14 +31,14 @@
     </div>
     <!-- Main navigation header -->
     <header
-      class="sticky inset-x-0 top-0 z-50 bg-white transition duration-300"
+      class="sticky top-0 z-50 bg-white transition duration-300 border-1 border-t-0 drop-shadow-sm border-gray-200 rounded-bl-xl rounded-br-xl"
     >
       <nav
         class="container mx-auto flex items-center justify-between lg:justify-center py-2"
         aria-label="Global"
       >
         <div class="flex items-center lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
+          <a href="#" class="p-1.5">
             <h1 class="font-semibold text-lg text-dark tracking-[1px]">
               Exclusive
             </h1>
@@ -161,7 +161,7 @@
         </div>
         <!-- Mobile search and user actions -->
         <div class="my-0.5">
-          <div class="flex items-center justify-end gap-2 py-2 mt-4 mb-3">
+          <div class="flex items-center justify-evenly py-2 mt-4 mb-3">
             <form
               action=""
               class="border-1 border-gray-400 rounded hover:border-blue-400"
@@ -224,12 +224,10 @@
           </div>
         </div>
         <!-- Mobile navigation categories accordion -->
-        <div class="categories">
+        <div class="categories flex flex-col gap-2">
           <li class="list-none">
             <details class="group">
-              <summary
-                class="flex justify-between items-center bg-teal-100 mb-0.5 rounded-xs px-4 py-1.5 text-sm/6 font-semibold text-gray-700 cursor-pointer"
-              >
+              <summary class="mobile-menu-categories">
                 <span>Smartphones</span>
                 <span class="transition-transform group-open:rotate-90"
                   >&#11208;</span
@@ -237,26 +235,15 @@
               </summary>
               <ul class="">
                 <li class="mb-0.5">
-                  <a
-                    href="#"
-                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
-                  >
+                  <a href="#" class="mobile-menu-sub-categories">
                     Android Phones
                   </a>
                 </li>
                 <li class="mb-0.5">
-                  <a
-                    href="#"
-                    class="block pl-10 py-1 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
-                  >
-                    iPhones
-                  </a>
+                  <a href="#" class="mobile-menu-sub-categories"> iPhones </a>
                 </li>
                 <li class="mb-0.5">
-                  <a
-                    href="#"
-                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
-                  >
+                  <a href="#" class="mobile-menu-sub-categories">
                     Budget Phones
                   </a>
                 </li>
@@ -265,9 +252,7 @@
           </li>
           <li class="list-none">
             <details class="group">
-              <summary
-                class="flex justify-between items-center bg-teal-100 mb-0.5 rounded-xs px-4 py-1.5 text-sm/6 font-semibold text-gray-700 cursor-pointer"
-              >
+              <summary class="mobile-menu-categories">
                 <span>Laptops</span>
                 <span class="transition-transform group-open:rotate-90"
                   >&#11208;</span
@@ -275,26 +260,17 @@
               </summary>
               <ul class="">
                 <li class="mb-0.5">
-                  <a
-                    href="#"
-                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
-                  >
+                  <a href="#" class="mobile-menu-sub-categories">
                     Ultrabooks
                   </a>
                 </li>
                 <li class="mb-0.5">
-                  <a
-                    href="#"
-                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
-                  >
+                  <a href="#" class="mobile-menu-sub-categories">
                     Gaming Laptops
                   </a>
                 </li>
                 <li class="mb-0.5">
-                  <a
-                    href="#"
-                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
-                  >
+                  <a href="#" class="mobile-menu-sub-categories">
                     Business Laptops
                   </a>
                 </li>
@@ -303,9 +279,7 @@
           </li>
           <li class="list-none">
             <details class="group">
-              <summary
-                class="flex justify-between items-center bg-teal-100 mb-0.5 rounded-xs px-4 py-1.5 text-sm/6 font-semibold text-gray-700 cursor-pointer"
-              >
+              <summary class="mobile-menu-categories">
                 <span>Smartwatches</span>
                 <span class="transition-transform group-open:rotate-90"
                   >&#11208;</span
@@ -313,18 +287,12 @@
               </summary>
               <ul class="">
                 <li class="mb-0.5">
-                  <a
-                    href="#"
-                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
-                  >
+                  <a href="#" class="mobile-menu-sub-categories">
                     Fitness Trackers
                   </a>
                 </li>
                 <li class="mb-0.5">
-                  <a
-                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
-                    href="#"
-                  >
+                  <a class="mobile-menu-sub-categories" href="#">
                     Luxury Smartwatches
                   </a>
                 </li>
@@ -333,9 +301,7 @@
           </li>
           <li class="list-none">
             <details class="group">
-              <summary
-                class="flex justify-between items-center bg-teal-100 mb-0.5 rounded-xs px-4 py-1.5 text-sm/6 font-semibold text-gray-700 cursor-pointer"
-              >
+              <summary class="mobile-menu-categories">
                 <span>Accessories</span>
                 <span class="transition-transform group-open:rotate-90"
                   >&#11208;</span
@@ -343,18 +309,12 @@
               </summary>
               <ul class="">
                 <li class="mb-0.5">
-                  <a
-                    href="#"
-                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
-                  >
+                  <a href="#" class="mobile-menu-sub-categories">
                     Phone Cases
                   </a>
                 </li>
                 <li class="mb-0.5">
-                  <a
-                    href="#"
-                    class="block pl-10 px-4 py-1.5 text-sm/6 font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-400 rounded-xs transition duration-300"
-                  >
+                  <a href="#" class="mobile-menu-sub-categories">
                     Chargers & Cables
                   </a>
                 </li>
@@ -364,42 +324,198 @@
         </div>
         <!-- Mobile navigation links -->
         <div
-          class="flex flex-col justify-around items-start bg-black my-2 p-1 rounded-md"
+          class="mt-4 flex flex-col justify-around items-stretch bg-gray-900 my-2 p-4 rounded-md"
         >
           <a
             href="#"
-            class="block rounded-lg px-3 text-center py-1 mb-0.5 text-base/7 text-gray-100 font-medium hover:bg-gray-100 hover:text-gray-900"
-            transition
-            duration-300
+            class="block border-b-1 border-gray-800 rounded-md px-3 text-center py-1 mb-0.5 text-base/7 text-gray-100 font-medium hover:bg-gray-100 hover:text-gray-900 transition duration-300"
             >Home</a
           >
           <a
             href="#"
-            class="block rounded-lg px-3 text-center py-1 mb-0.5 text-base/7 text-gray-100 font-medium hover:bg-gray-100 hover:text-gray-900 transition duration-300"
+            class="block border-b-1 border-gray-800 rounded-md px-3 text-center py-1 mb-0.5 text-base/7 text-gray-100 font-medium hover:bg-gray-100 hover:text-gray-900 transition duration-300"
             >Contact</a
           >
           <a
             href="#"
-            class="block rounded-lg px-3 text-center py-1 mb-0.5 text-base/7 text-gray-100 font-medium hover:bg-gray-100 hover:text-gray-900 transition duration-300"
+            class="block rounded-md px-3 text-center py-1 mb-0.5 text-base/7 text-gray-100 font-medium hover:bg-gray-100 hover:text-gray-900 transition duration-300"
             >About</a
           >
         </div>
       </div>
     </div>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              Hero section                               -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <section class="hero">
+      <div class="container mx-auto flex items-center justify-between gap-6">
+        <div class="categories flex flex-col gap-2 border-r-1 border-gray-200 p-6">
+          <li class="list-none">
+            <details class="group">
+              <summary class="desktop-sidemenu-categories">
+                <span>Smartphones</span>
+                <span class="transition-transform group-open:rotate-90"
+                  >&#11162;</span
+                >
+              </summary>
+              <ul class="">
+                <li class="mb-0.5">
+                  <a href="#" class="desktop-sidemenu-sub-categories">
+                    Android Phones
+                  </a>
+                </li>
+                <li class="mb-0.5">
+                  <a href="#" class="desktop-sidemenu-sub-categories">
+                    iPhones
+                  </a>
+                </li>
+                <li class="mb-0.5">
+                  <a href="#" class="desktop-sidemenu-sub-categories">
+                    Budget Phones
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="list-none">
+            <details class="group">
+              <summary class="desktop-sidemenu-categories">
+                <span>Laptops</span>
+                <span class="transition-transform group-open:rotate-90"
+                  >&#11162;</span
+                >
+              </summary>
+              <ul class="">
+                <li class="mb-0.5">
+                  <a href="#" class="desktop-sidemenu-sub-categories">
+                    Ultrabooks
+                  </a>
+                </li>
+                <li class="mb-0.5">
+                  <a href="#" class="desktop-sidemenu-sub-categories">
+                    Gaming Laptops
+                  </a>
+                </li>
+                <li class="mb-0.5">
+                  <a href="#" class="desktop-sidemenu-sub-categories">
+                    Business Laptops
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="list-none">
+            <details class="group">
+              <summary class="desktop-sidemenu-categories">
+                <span>Smartwatches</span>
+                <span class="transition-transform group-open:rotate-90"
+                  >&#11162;</span
+                >
+              </summary>
+              <ul class="">
+                <li class="mb-0.5">
+                  <a href="#" class="desktop-sidemenu-sub-categories">
+                    Fitness Trackers
+                  </a>
+                </li>
+                <li class="mb-0.5">
+                  <a class="desktop-sidemenu-sub-categories" href="#">
+                    Luxury Smartwatches
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="list-none">
+            <details class="group">
+              <summary class="desktop-sidemenu-categories">
+                <span>Accessories</span>
+                <span class="transition-transform group-open:rotate-90"
+                  >&#11162;</span
+                >
+              </summary>
+              <ul class="">
+                <li class="mb-0.5">
+                  <a href="#" class="desktop-sidemenu-sub-categories">
+                    Phone Cases
+                  </a>
+                </li>
+                <li class="mb-0.5">
+                  <a href="#" class="desktop-sidemenu-sub-categories">
+                    Chargers & Cables
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </div>
+      </div>
+    </section>
+
     <!-- Main content area -->
     <main class="p-6">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, voluptatem
       error velit minima doloremque possimus ea dolorum corrupti, eligendi quas
       molestias distinctio pariatur doloribus aperiam officiis illo ducimus a
-      alias!
+      alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quod
+      distinctio beatae cupiditate doloremque in illo nam rerum officiis, aut,
+      odit eos ullam maiores ea, unde facilis pariatur natus quas. Facere quis
+      hic, ipsum nulla nesciunt veniam, non quia veritatis, labore minus
+      mollitia! Aperiam praesentium laudantium blanditiis corporis dolor
+      voluptatibus asperiores commodi, nisi, provident maxime animi, quisquam
+      dolore! Atque, dolor. Minima voluptas reiciendis, possimus eveniet impedit
+      corporis accusantium! Error facere quos blanditiis odio, voluptatum animi
+      perferendis asperiores, rerum fugit a corrupti nostrum deserunt assumenda
+      facilis. Ipsam numquam earum quibusdam. Molestias. Quo quos deserunt qui
+      aspernatur, quae atque ab doloribus quis perferendis et nam dolorem
+      tempore nemo dicta doloremque obcaecati voluptatem consectetur expedita!
+      Enim nesciunt quo aliquid delectus necessitatibus. Qui, molestias? Fugiat
+      quo consectetur maxime ipsa. Ducimus sed, ratione natus dicta quam
+      corrupti at aliquid similique totam rerum quae veritatis laborum sapiente
+      ipsa dignissimos ex itaque. Aperiam atque doloribus eveniet eligendi. Nam,
+      nostrum minus praesentium tempore animi maiores voluptatum quibusdam
+      temporibus exercitationem velit totam numquam minima omnis, reprehenderit,
+      iste quam distinctio. Optio hic recusandae omnis error ad vitae veniam
+      culpa cum? Nisi dolorum dolores officia vel earum accusamus magnam
+      necessitatibus totam ullam et excepturi, rerum porro quas sit mollitia, id
+      ratione ab aliquam tempora quaerat maiores adipisci aspernatur. Ratione,
+      earum cupiditate? Nulla ad nobis dolorem ducimus impedit alias quaerat,
+      aperiam eum. Quam illo explicabo reprehenderit quis. Maiores ipsum iste,
+      aut blanditiis quasi soluta rerum hic autem doloremque. Voluptatum, culpa
+      iusto! Provident. Sapiente labore, esse unde animi voluptatibus temporibus
+      sequi, voluptas, ut quibusdam in perferendis quis nihil ea. Facilis ad, ea
+      aliquam tempora optio iste corrupti iusto cum eveniet sint, autem ex!
+      Reprehenderit fugiat, aperiam inventore, qui saepe sed expedita dolor
+      distinctio nostrum nihil veniam voluptatum explicabo ex, culpa magnam
+      autem? Sint rem facere unde, itaque eveniet rerum consequatur quas
+      perferendis nostrum! Blanditiis facere magni accusantium labore magnam,
+      ipsum omnis fuga, voluptatem eaque odit earum sed ut corporis eligendi
+      commodi veritatis quaerat voluptas incidunt! Similique fuga nostrum
+      deserunt voluptatum voluptas. Dolore, iure. Voluptates perspiciatis
+      tenetur quam cum dignissimos doloribus labore quod velit. Commodi dolorum
+      iste eius minima obcaecati eaque aliquid, deleniti delectus asperiores
+      ipsam, soluta quis temporibus saepe, officiis eveniet vero veritatis!
+      Totam veritatis modi veniam quia error eius voluptatum voluptatem
+      voluptate culpa reprehenderit maxime ea ducimus saepe praesentium
+      molestiae sint, dicta commodi delectus repellendus aliquam eum cumque
+      tempora? Expedita, animi dolore! Voluptatum consequuntur aliquam molestiae
+      nostrum sed quibusdam qui ab, alias aperiam repellendus sequi, sunt ipsa.
+      Neque quasi nobis aliquid dignissimos voluptas nostrum numquam recusandae,
+      ullam commodi, voluptate sed eos nulla. Necessitatibus, ratione delectus?
+      Molestias debitis id fugiat tenetur dolor nemo commodi! Adipisci alias
+      accusantium iste cum dignissimos delectus amet molestias officiis! Ex
+      maiores recusandae labore sed dolores quos optio deserunt.
     </main>
     <!-- Footer section -->
-    <footer class="w-full bg-black">
+    <footer class="w-full bg-gray-950 rounded-tl-xl rounded-tr-xl">
       <div class="container mx-auto py-10">
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-between items-start gap-6 text-gray-100"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-between items-start gap-6 text-gray-100 p-3"
         >
-          <div class="flex flex-col justify-center items-start gap-2">
+          <div
+            class="flex flex-col justify-center items-center sm:items-start gap-2"
+          >
             <a href="#" class="">
               <h4 class="font-semibold text-lg text-white tracking-[1px] mb-5">
                 Exclusive
@@ -419,7 +535,9 @@
               />
             </div>
           </div>
-          <div class="flex flex-col justify-center items-start gap-2">
+          <div
+            class="flex flex-col justify-center items-center sm:items-start gap-2"
+          >
             <h5 class="text-[20px] font-stretch-semi-expanded mb-1.5">
               Support
             </h5>
@@ -434,7 +552,9 @@
               <i class="fa-solid fa-phone"></i> +880-86948-86
             </p>
           </div>
-          <div class="flex flex-col justify-center items-start gap-2">
+          <div
+            class="flex flex-col justify-center items-center sm:items-start gap-2"
+          >
             <h5 class="text-[20px] font-stretch-semi-expanded mb-1.5">
               Account
             </h5>
@@ -464,7 +584,9 @@
               >&#8212; Shop</a
             >
           </div>
-          <div class="flex flex-col justify-center items-start gap-2">
+          <div
+            class="flex flex-col justify-center items-center sm:items-start gap-2"
+          >
             <h5 class="text-[20px] font-stretch-semi-expanded mb-1.5">
               Quick Link
             </h5>
@@ -489,7 +611,9 @@
               >&#8212; Contact</a
             >
           </div>
-          <div class="flex flex-col justify-center items-start gap-2">
+          <div
+            class="flex flex-col justify-center items-center sm:items-start gap-2"
+          >
             <h5 class="text-[20px] font-stretch-semi-expanded mb-1.5">
               Download App
             </h5>
