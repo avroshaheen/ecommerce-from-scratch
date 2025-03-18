@@ -13,16 +13,12 @@
   }
 }
 @layer tailwind.components {
-  .mobile-menu-categories {
-    @apply inline-flex w-60 justify-between items-center bg-gray-100 border-b-1 border-r-1 border-gray-300 rounded-xs px-3 py-0.5 mb-1 text-sm/6 font-semibold text-gray-700 cursor-pointer;
-  }
-  .mobile-menu-sub-categories {
-    @apply block pl-10 px-4 py-1 border-1 border-gray-100 text-sm/6 font-semibold text-gray-600 hover:bg-gray-200 hover:text-blue-500 rounded-xs transition duration-300;
-  }
+  .mobile-menu-categories,
   .desktop-sidemenu-categories {
-    @apply inline-flex w-60 justify-between items-center px-3 text-sm/6 mb-1.5 font-medium text-gray-950 cursor-pointer;
+    @apply inline-flex w-60 justify-between items-center px-3 text-sm/6 mb-1.5 font-medium text-gray-800 cursor-pointer;
   }
+  .mobile-menu-sub-categories,
   .desktop-sidemenu-sub-categories {
-    @apply pl-4 px-4 py-0.5 text-sm text-gray-600 hover:text-blue-500 transition duration-300;
+    @apply pl-14 px-4 py-0.5 text-xs/6 font-semibold text-gray-900 hover:text-blue-500 transition duration-300;
   }
 }
