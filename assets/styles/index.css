@@ -17,8 +17,25 @@
   .desktop-sidemenu-categories {
     @apply inline-flex w-60 justify-between items-center px-3 text-sm/6 mb-1.5 font-medium text-gray-800 cursor-pointer;
   }
+  .desktop-sidemenu-categories {
+    @apply px-2 w-45;
+  }
   .mobile-menu-sub-categories,
   .desktop-sidemenu-sub-categories {
     @apply pl-14 px-4 py-0.5 text-xs/6 font-semibold text-gray-900 hover:text-blue-500 transition duration-300;
   }
+  .desktop-sidemenu-sub-categories {
+    @apply pl-3 px-0;
+  }
+}
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #4f46e5 !important;
 }
